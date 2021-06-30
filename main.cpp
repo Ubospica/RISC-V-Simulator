@@ -1,6 +1,22 @@
 #include <iostream>
 
+#include "CPU.hpp"
+#include "IO.hpp"
+
+
+namespace RISCV {
+	
+	
+	void run() {
+		CPU cpu;
+		readMemory(cpu.mem, stdin);
+		cpu.run();
+	}
+	
+}
+
+
 int main() {
-	std::cout << "Hello, World!" << std::endl;
+	RISCV::run();
 	return 0;
 }
