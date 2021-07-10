@@ -6,7 +6,6 @@
 
 namespace RISCV {
 	
-	
 	void run() {
 		CPU cpu;
 		readMemory(cpu.mem, stdin);
@@ -17,6 +16,8 @@ namespace RISCV {
 
 
 int main() {
+//	freopen("a.in", "r", stdin);
+//	freopen("a.err", "w", stderr);
 	RISCV::run();
 	return 0;
 }

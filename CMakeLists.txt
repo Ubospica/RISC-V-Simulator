@@ -6,4 +6,5 @@ add_compile_options(-Ofast)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(code main.cpp)
+add_executable(old old/main.cpp)
+add_executable(code src/main.cpp)
